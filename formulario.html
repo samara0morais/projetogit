@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Formulario-Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo"> Insira suas informações</p>
+        <br>
+    </div> 
+    <form>
+        <main>
+            
+            <fieldset class="grupo">
+             <div class="campo"> 
+                 <label for="nome completo"><strong>Nome Completo</strong></label>
+                 <input type="text" name="nome completo" id="nome completo" required>
+               
+             </div>
+             
+             <div class="campo">
+                 <label for="itel"><strong>Telefone</strong></label>
+                 <input typy="tel" name="tel" id="itel" autocomplete="tel-national" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required >
+           
+            
+          </div>
+         
+         <div class="campo">
+             <label for="E-mail"><strong>E-mail</strong></label>
+             <input type="email" name="email" autocomplete="email" id="email" required>
+     
+         
+         </div>
+     </fieldset>
+        </main>
+        <main>
+            
+                <div class="campo">
+                <label id="escolaridade"><strong>Escolaridade</strong></label>
+                <select id="escolaridade" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Fundamental Incompleto</option>
+                    <option>Fundamental Cursando</option>
+                    <option>Fundamental Completo</option>
+                    <option>Ensino Medio Incompleto</option>
+                    <option>Ensino Medio Cursando</option>
+                    <option>Ensino Medio Completo</option>
+                    <option>Superior Incompleto</option>
+                    <option>Superior Cursando</option>
+                    <option>Superior Completo</option>
+                </select>
+            </div>
+          
+          
+           <div class="campo">
+               <br>
+               <label id="cargo"><strong>Cargo Desejado</strong></label>
+               <textarea rows="1" style="width: 17em;" id="cargo" name="cargo" required>
+
+               </textarea>
+               </div>
+          
+        </main>
+       
+          <button class="botao" type="submit">Concluído</button>
+    </form>
+</body>
+</html>
